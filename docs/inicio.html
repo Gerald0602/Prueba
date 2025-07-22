@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NutriVida - Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+ <style>
+    
+     .navbar-dark .navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #07ff83 !important;
+  text-shadow: 0 0 5px rgba(7, 255, 28, 0.5);
+}
+
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.hero {
+  background-color: #f2f7fa;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.3rem;
+}
+h5 { font-family: 'Poppins', sans-serif;
+}
+
+.section-cards .card {
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+
+.card-orange {
+  background-color: #f68d2e;
+}
+
+.card-blue {
+  background-color: #0072ce;
+}
+
+.card-green {
+  background-color: #78be20;
+}
+
+.card-red {
+  background-color: #d62828;
+}
+
+.rounded-icon {
+  font-size: 2rem;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.mplato-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mplato-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 128, 0, 0.2);
+}
+
+.mplato-icon {
+  height: 80px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.mplato-card:hover .mplato-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.mplato-card p {
+  color: #555;
+  max-width: 250px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+}
+
+.mplato-card h5 {
+  margin-bottom: 0.8rem;
+}
+
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3 rounded-bottom">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="inicio.html" style="font-family: 'Poppins', sans-serif; font-size: 1.6rem;">
+      <img src="Img/logo.png" alt="Logo NutriVida" width="45" height="45" class="rounded-circle shadow-sm">
+      <span style="color: #07ff83;">NutriVida</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto" style="font-size: 1.1rem;">
+        <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="citas.html">Citas</a></li>
+        <li class="nav-item"><a class="nav-link" href="tips.html">Consejos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero text-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4">
+        <h1 class="text-success">Tu guía hacia una vida saludable</h1>
+        <p class="mt-3 text-muted">Explora consejos, productos y servicios para mejorar tu alimentación con el respaldo de nuestros expertos.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4">
+          <a href="productos.html" class="btn btn-warning btn-lg me-md-2">Ver productos</a>
+          <a href="reserva.html" class="btn btn-primary btn-lg">Agenda una cita</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="Img/Inicio/MiPlatoArriba.png" alt="Gráfico MyPlate" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Tarjetas de acceso rápido -->
+<section class="section-cards py-5">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-md-3">
+        <div class="card card-green p-4">
+          <div class="rounded-icon mx-auto"><i class="bi bi-egg-fill"></i></div>
+          <h5 class="fw-bold">Nutrición</h5>
+          <p>Consejos sobre cómo alimentarte bien todos los días.</p>
+          <a href="tips.html" class="btn btn-outline-light">Leer más</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-orange p-4">
+          <div class="rounded-icon mx-auto"><i class="bi bi-shop"></i></div>
+          <h5 class="fw-bold">Productos</h5>
+          <p>Explora productos saludables y orgánicos.</p>
+          <a href="productos.html" class="btn btn-outline-light">Ver catálogo</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-blue p-4">
+          <div class="rounded-icon mx-auto"><i class="bi bi-person-check-fill"></i></div>
+          <h5 class="fw-bold">Especialistas</h5>
+          <p>Atención personalizada de nutricionistas certificados.</p>
+          <a href="nosotros.html" class="btn btn-outline-light">Conócenos</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-red p-4">
+          <div class="rounded-icon mx-auto"><i class="bi bi-calendar2-check-fill"></i></div>
+          <h5 class="fw-bold">Citas</h5>
+          <p>Reserva fácilmente tu consulta desde casa.</p>
+          <a href="reserva.html" class="btn btn-outline-light">Agendar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Sección MiPlato Mejorada -->
+<section class="py-5" style="background-color: #f5f5dc;">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold text-success display-5">MiPlato</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Tarjetas reutilizables -->
+      <div class="col-md-4">
+        <div class="mplato-card">
+          <img src="Img/Inicio/MiPlato.png" alt="MiPlato" class="mplato-icon" />
+          <h5 class="fw-bold">¿Qué es MiPlato?</h5>
+          <p>Es una guía que te ayuda a equilibrar tus comidas con porciones adecuadas de frutas, verduras, granos, proteínas y lácteos.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mplato-card">
+          <img src="img/Inicio/Frutas.png" alt="Frutas" class="mplato-icon" />
+          <h5 class="fw-bold">Frutas</h5>
+          <p>Incorpora frutas frescas todos los días, son fuente de vitaminas y antioxidantes.</p>
+          <a href="frutas.html" class="btn btn-success btn-sm mt-2">Ver frutas</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mplato-card">
+          <img src="img/Inicio/Verduras.png" alt="Verduras" class="mplato-icon" />
+          <h5 class="fw-bold">Verduras</h5>
+          <p>Llena la mitad de tu plato con vegetales de distintos colores para una mejor nutrición.</p>
+          <a href="verduras.html" class="btn btn-success btn-sm mt-2">Ver verduras</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mplato-card">
+          <img src="img/Inicio/Granos.png" alt="Granos" class="mplato-icon" />
+          <h5 class="fw-bold">Granos</h5>
+          <p>Prefiere los granos integrales como avena, arroz integral o quinoa.</p>
+          <a href="granos.html" class="btn btn-success btn-sm mt-2">Ver granos</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mplato-card">
+          <img src="img/Inicio/Proteinas.png" alt="Proteínas" class="mplato-icon" />
+          <h5 class="fw-bold">Alimentos proteicos</h5>
+          <p>Elige proteínas magras como pescado, legumbres y huevos.</p>
+          <a href="proteinas.html" class="btn btn-success btn-sm mt-2">Ver proteínas</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mplato-card">
+          <img src="img/Inicio/Lacteos.png" alt="Lácteos" class="mplato-icon" />
+          <h5 class="fw-bold">Alternativas a los lácteos</h5>
+          <p>Considera opciones como leche vegetal fortificada con calcio.</p>
+          <a href="Lacteos.html" class="btn btn-success btn-sm mt-2">Ver opciones</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="fw-bold">NutriVida</h5>
+        <p class="mb-0">Tu bienestar es nuestra prioridad. Reserva tu cita y empieza a mejorar tu salud.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <h5 class="fw-bold">Contáctanos</h5>
+        <p><strong>Teléfono:</strong> +123 456 7890</p>
+        <p><strong>Correo electrónico:</strong> contacto@nutrivida.com</p>
+        <p><strong>Ubicación:</strong> <a href="https://www.google.com/maps?q=Calle+Ficticia+123,+Ciudad+de+la+Salud" target="_blank" class="text-decoration-none text-white">Calle Ficticia 123, Ciudad de la Salud</a></p>
+        <div class="mt-3">
+          <a href="https://www.facebook.com/NutriVida" class="text-decoration-none text-white me-3">
+            <i class="bi bi-facebook fs-4"></i>
+          </a>
+          <a href="https://www.instagram.com/NutriVida" class="text-decoration-none text-white me-3">
+            <i class="bi bi-instagram fs-4"></i>
+          </a>
+          <a href="https://wa.me/1234567890" class="text-decoration-none text-white">
+            <i class="bi bi-whatsapp fs-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-3">
+    <p class="mb-0">&copy; 2025 NutriVida. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
